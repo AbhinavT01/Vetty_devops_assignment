@@ -35,6 +35,35 @@ Make the script executable and run it
 chmod +x script.sh
 ./script.sh
 ```
+##Task 3: Docker Basics 
+Install Docker Destop(Ubuntu) using cli commands
+and 
+```bash
+systemctl --user start docker-desktop
+```
+## pull nginx docker image 
+```bash
+docker pull nginx
+```
+then  
+```bash
+mkdir nginx-docker
+cd nginx-docker
+touch dockerfile
+open dockerfile
+```
+add the script
+```bash
+FROM nginx:latest
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+->
+```bash
+docker build -t my-nginx .
+docker run -d -p 8080:80 --name nginx-container my-nginx
+```
+
 
 
 
