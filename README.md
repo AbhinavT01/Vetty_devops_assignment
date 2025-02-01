@@ -35,7 +35,7 @@ Make the script executable and run it
 chmod +x script.sh
 ./script.sh
 ```
-##Task 3: Docker Basics 
+## Task 3: Docker Basics 
 Install Docker Destop(Ubuntu) using cli commands
 and 
 ```bash
